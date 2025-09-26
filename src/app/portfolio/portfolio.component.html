@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<section class="text-center m-auto py-5 position-relative">
+    <h1 class="text-uppercase fw-bold">portfolio component</h1>
+    <app-title></app-title>
+    <div class="container">
+      <div class="row g-5">
+        @for (item of items; track $index) {
+          <div class="col-md-4">
+            <div (click)="openImage(item.img)" class="inner position-relative rounded-3 overflow-hidden">
+              <img class="w-100" [src]= "item.img" alt="">
+              <div class="layer d-flex justify-content-center align-items-center w-100 position-absolute start-0 end-0 top-0 bottom-0">
+                <span><i class="fa-solid fa-plus"></i></span>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+
+
+@if (selectedImage) {
+  <div class="full-image" (click)="closeImage()">
+    <img [src]="selectedImage" alt="" (click)="$event.stopPropagation()">
+  </div>
+}
+
+</section>
+<app-footer></app-footer>
+

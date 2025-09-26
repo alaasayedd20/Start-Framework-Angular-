@@ -1,0 +1,66 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files
+
+# =========================
+# Angular & Build outputs
+# =========================
+/dist
+/tmp
+/out-tsc
+/bazel-out
+/.angular/cache
+
+# =========================
+# Node
+# =========================
+/node_modules
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+package-lock.json  # (optional – only if you want contributors to regenerate it)
+yarn.lock          # (optional – same as above)
+pnpm-lock.yaml     # (optional – same as above)
+
+# =========================
+# IDEs and editors
+# =========================
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# =========================
+# Visual Studio Code
+# =========================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# History / cache
+.history/*
+.sass-cache/
+
+# =========================
+# Testing & Coverage
+# =========================
+/coverage
+/test-results
+/junit.xml
+/karma-coverage
+
+# =========================
+# Logs
+# =========================
+*.log
+/libpeerconnection.log
+testem.log
+
+# =========================
+# System files
+# =========================
+.DS_Store
+Thumbs.db
