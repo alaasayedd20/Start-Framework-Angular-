@@ -1,0 +1,20 @@
+span::before{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: #2C3E50;
+  top:50%;
+  right: 180%;
+  transform: translateY(-50%);
+}
+span::after{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: #2C3E50;
+  top:50%;
+  left: 180%;
+  transform: translateY(-50%);
+}

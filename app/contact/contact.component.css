@@ -1,0 +1,28 @@
+section{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0.2rem;
+  border-color: gainsboro;
+  margin: 2rem 0;
+}
+input:focus{
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+
+}
+:focus-visible {
+    outline: transparent auto 1px;
+}
+.btn{
+  background-color: #1ABC9C;
+  color: #fff;
+  text-align: start;
+}
