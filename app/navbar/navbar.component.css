@@ -1,9 +1,0 @@
-.active-link {
-  background-color: #1ABC9C; /* Bootstrap red */
-  border-radius: 0.5rem;
-  padding: 0.5rem 0.9rem;
-  transition: all 0.3s ease-in-out;
-}
-nav{
-  background-color: #2C3E50;
-}
